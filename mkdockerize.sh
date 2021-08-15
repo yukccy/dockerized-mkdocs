@@ -13,7 +13,7 @@ produce() {
 
 serve() {
 	#extract result.tar.gz
-	tar xzf - -C project/site
+	tar -xvzf -C project/site
 	cd project
 	mkdocs serve -a 0.0.0.0:8000
 }
