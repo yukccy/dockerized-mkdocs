@@ -6,7 +6,7 @@ LABEL APPLICATION="Mkdocs"
 
 #install dependencies
 RUN apk update
-RUN apk add python3
+RUN apk add cmd:pip3
 RUN pip3 install mkdocs
 
 #expose port 8000 for mkdocs serve
