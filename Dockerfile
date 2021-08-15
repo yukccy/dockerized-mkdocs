@@ -14,9 +14,9 @@ EXPOSE 8000
 
 #setup working directory
 WORKDIR /mkdocs
-COPY mkdockerize.sh /mkdocs/scripts/mkdockerize.sh
+COPY . /mkdocs
 
 #make the script executable
-RUN chmod 755 /mkdocs/scripts/mkdockerize.sh
+RUN chmod 755 /mkdocs/mkdockerize.sh
 
-ENTRYPOINT ["/mkdocs/scripts/mkdockerize.sh"]
+ENTRYPOINT ["/mkdocs/mkdockerize.sh"]
