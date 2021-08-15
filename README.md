@@ -39,7 +39,7 @@ The project repository comes with a .gitlab-ci.yml file which includes build and
 
 For Build stage, it builds the docker image and push to GitLab Container Registry, with result.tar.gz as the artifact.
 
-For Test stage, it extracts the result.tar.gz from Build stage, and cat the index.html, which proves that the mkdocs build works and it can work as an static website immediately.
+For Test stage, it cat the index.html which is from mkdocs build that proves that the mkdocs build works and it can work as an static website immediately.
 
 ## Commit history
 

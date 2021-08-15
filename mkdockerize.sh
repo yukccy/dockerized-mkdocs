@@ -13,9 +13,16 @@ produce() {
 
 serve() {
 	#extract result.tar.gz
-	tar -xvzf -C project/site
+	tar -xvzf result.tar.gz -C project/site
 	cd project
 	mkdocs serve -a 0.0.0.0:8000
+}
+
+gitlab() {
+	cd project
+	mkdocs build
+    cd site
+    cat index.html
 }
 
 case $1 in
@@ -24,5 +31,8 @@ case $1 in
 		;;
 	serve)
 		serve
+		;;
+	gitlab)
+		gitlab
 		;;
 esac
