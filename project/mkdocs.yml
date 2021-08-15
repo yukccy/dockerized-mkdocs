@@ -1,4 +1,6 @@
-dev_addr: 0.0.0.0:8000
-dev_addr: 0.0.0.0:8000
-dev_addr: 0.0.0.0:8000
+site_name: ChiuYuk.Chan
+
+nav:
+    - Home: index.md
+theme: readthedocs
 dev_addr: 0.0.0.0:8000

@@ -1,12 +1,6 @@
 #! /bin/sh
 
 produce() {
-    #fail case
-    if [[ -z "$1" ]]; then
-		echo -e "No valid mkdocs project in the entered path"
-		exit 1
-	fi
-	#success case
 	if [[ -d $1 ]]; then
 		cd $1
 		mkdocs build &> /dev/null
@@ -18,9 +12,8 @@ produce() {
 }
 
 serve() {
-	#make directory for mkdocs project
-	mkdir project
-	tar xzf - -C project
+	#extract result.tar.gz
+	tar xzf - -C project/site
 	cd project
 	mkdocs serve -a 0.0.0.0:8000
 }
