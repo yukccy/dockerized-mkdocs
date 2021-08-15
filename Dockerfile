@@ -19,4 +19,4 @@ COPY mkdockerize.sh /mkdocs/scripts/mkdockerize.sh
 #make the script executable
 RUN chmod 755 /mkdocs/scripts/mkdockerize.sh
 
-ENTRYPOINT ["/mkdocs/bin/mkdockerize.sh"]
+ENTRYPOINT ["/mkdocs/scripts/mkdockerize.sh"]
