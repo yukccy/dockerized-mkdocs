@@ -40,7 +40,3 @@ The project repository comes with a .gitlab-ci.yml file which includes build and
 For Build stage, it builds the docker image and push to GitLab Container Registry, with result.tar.gz as the artifact.
 
 For Test stage, it cat the index.html which is from mkdocs build that proves that the mkdocs build works and it can work as an static website immediately.
-
-## Commit history
-
-This project has pushed to a public GitLab repository. You can check the commit history from https://gitlab.com/ccy_yuk/mkdocs-docker-sre-challenge/-/commits/master.
